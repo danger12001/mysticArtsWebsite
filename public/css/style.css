@@ -1,0 +1,241 @@
+body {
+  font-family: 'Almendra', serif;
+   /*display: flex;*/
+   /*min-height: 100vh;*/
+   /*flex-direction: column;*/
+   background-color: #4A4A4A;
+ }
+
+ main {
+   /*flex: 1 0 auto;*/
+ }
+
+nav {
+  background-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.nav-buttons li a {
+  font-size: 25px;
+}
+
+.brand-logo {
+  font-size: 40px !important;
+}
+
+.nav-buttons li a:hover {
+  color: #178646;
+}
+
+.page-footer {
+  /*position: absolute !important;*/
+  width: 100% !important;
+  /*bottom: 0px !important;*/
+  padding-top: 0px !important;
+}
+
+.home-title {
+  color: white;
+  font-size: 80px;
+  margin-top: 30px;
+  margin-bottom: -60px !important;
+}
+.home-left-img {
+  height: 250px;
+}
+.home-right-img {
+  height: 250px;
+}
+.browse-button {
+  color: white;
+  margin-top: 90px !important;
+  width: 240px;
+  margin: 0 auto;
+  border: 2px solid #178646;
+  font-size: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px black;
+}
+.browse-button:hover {
+  background-color: #178646;
+}
+.home-paragraph {
+  color: white;
+  font-size: 25px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.home-list {
+  color: white;
+  padding: 0;
+  padding-left: 20px;
+}
+.home-list li {
+  color: white;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.detail-list {
+  color: white;
+  padding: 0;
+  padding-left: 20px;
+}
+.detail-list li {
+  color: white;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.detail-title {
+  text-decoration: underline;
+  color: white;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.details {
+  width: 90%;
+  margin: 0 auto;
+  /*margin-left: 50px;*/
+}
+.home-list-title {
+  text-decoration: underline;
+  color: white;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.home-made-container {
+  margin-left: 20px;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid #178646;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px black;
+  width: 80% !important;
+}
+.home-video {
+  height: 200px;
+  border: 1px solid white;
+  margin: 10px;
+}
+.carousel.carousel-slider {
+  height: 380px !important;
+}
+.categories-container {
+  margin-left: 20px;
+  border: 2px solid #178646;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  width: 60% !important;
+}
+.coming-soon-container {
+  margin-right: 20px;
+  float: right;
+  border: 2px solid #178646;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  width: 90% !important;
+}
+.category-title {
+  border-bottom: 1px solid #178646;
+}
+.category-item {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid #178646;
+}
+.category-item:hover {
+  background-color: #178646 !important;
+  cursor: pointer;
+
+}
+.coming-soon-image{
+  height: 120px;
+  width: 100%;
+  border: 1px solid white;
+  margin-bottom: -35px;
+  z-index: 997;
+}
+.coming-soon-text{
+  margin-bottom: 10px;
+  z-index: 999;
+  /*position: relative;*/
+  /*bottom: 10px;*/
+  /*margin: 0;*/
+}
+.product-container {
+  border-radius: 10px;
+  border: 2px solid #178646;
+  padding: 5px;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: white;
+  width: 70%;
+}
+.products-container {
+  /*margin-left: 50px;*/
+  width: 80%;
+  display: none;
+  margin-bottom: 120px !important;
+  /*margin-right: 20px;*/
+  margin: 0 auto;
+}
+.purchase-button a {
+color: inherit;
+ text-decoration: inherit;
+}
+.purchase-button {
+  border: 2px solid #178646;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.purchase-button:hover {
+  background-color: #178646;
+
+}
+.product-price {
+  font-size: 16px;
+}
+.product-image {
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid white;
+  height: 100px;
+}
+.about-paragraph {
+  border: 2px solid #178646;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  margin-top: 20px;
+}
+.about-title {
+  font-size: 24px;
+  text-decoration: underline;
+}
+.about-text {
+  font-size: 18px;
+}
+.about-video {
+  margin: 0 auto;
+  width: 100%;
+}

@@ -1,0 +1,177 @@
+<html>
+<!-- Nav start -->
+   <head>
+     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+     <link type="text/css" rel="stylesheet" href="public/css/materialize.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="public/css/style.css"  media="screen,projection"/>
+     <link href="https://fonts.googleapis.com/css?family=Almendra:400i" rel="stylesheet">
+     <title id="title"></title>
+     <style> a {
+       text-decoration: 'none';
+       /*color: black !important;*/
+     }
+        </style>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Mystic Arts</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down nav-buttons">
+          <li ><a href="index.html">Home</a></li>
+          <li><a style='color: #178646 !important;' href="products.html">Products</a></li>
+          <li><a  href="aboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+  <div class='row'>
+    <div class='col s6'>
+      <div class='categories-container'>
+        <div class='category-title'>
+          Categories
+        </div>
+          <div id='pendants-button' onClick='selectCategory("pendants")' class='category-item'> Pendants </div>
+          <div id='coasters-button' onClick='selectCategory("coasters")' class='category-item'> Coasters </div>
+          <div id='pyramids-button' onClick='selectCategory("pyramids")' class='category-item'> Pyramids </div>
+      </div>
+    </div>
+
+    <div class='col s6'>
+      <div class='coming-soon-container'>
+        Coming Soon!
+        <div style='margin: 0' class='row'>
+          <div class='col s6'> <img class='coming-soon-image'/> <div class='coming-soon-text'> Tables </div> </div>
+          <div class='col s6'> <img class='coming-soon-image'/> <div class='coming-soon-text'> Lamps </div> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id='pendants' class='products-container'>
+  <div class='row'>
+
+    <div class='col s4'>
+      <div class='product-container'>
+       <img class='product-image'/>
+      <div class='product-price'> Retail Price - R </div>
+      <div class='product-price'> Wholesale Price - R </div>
+      <div class='purchase-button'> <a href='aboutUs.html'> Purchase </a> </div>
+    </div>
+   </div>
+
+
+
+ </div>
+</div>
+<div id='coasters' class='products-container'>
+  <div class='row'>
+
+    <div class='col s4'>
+      <div class='product-container'>
+       <img class='product-image'/>
+      <div class='product-price'> Retail Price - R </div>
+      <div class='product-price'> Wholesale Price - R </div>
+      <div class='purchase-button'> <a href='aboutUs.html'> Purchase </a> </div>
+    </div>
+   </div>
+
+
+ </div>
+</div>
+<div id='pyramids' class='products-container'>
+  <div class='row'>
+
+    <div class='col s4'>
+      <div class='product-container'>
+       <img class='product-image'/>
+      <div class='product-price'> Retail Price - R </div>
+      <div class='product-price'> Wholesale Price - R </div>
+      <div class='purchase-button'> <a href='aboutUs.html'> Purchase </a> </div>
+    </div>
+   </div>
+
+
+ </div>
+</div>
+    <footer class="page-footer black">
+
+          <div class="footer-copyright">
+            <div class="container center">
+            Created By Paul Robertson & Morgan Evans
+            </div>
+          </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="public/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+         $('.carousel.carousel-slider').carousel({fullWidth: true});
+      });
+    </script>
+
+    <script>
+    var selectedCategory = 'pendants';
+
+      var selectCategory =  function(selection) {
+
+        selectedCategory = selection;
+
+        var pendants = document.getElementById('pendants');
+        var coasters = document.getElementById('coasters');
+        var pyramids = document.getElementById('pyramids');
+        var pendantsBtn = document.getElementById('pendants-button');
+        var coastersBtn = document.getElementById('coasters-button');
+        var pyramidsBtn = document.getElementById('pyramids-button');
+
+        switch(selectedCategory){
+          case 'pendants':
+          pendants.style.display = 'block';
+          coasters.style.display = 'none';
+          pyramids.style.display = 'none';
+          pendantsBtn.style.backgroundColor = '#178646';
+          coastersBtn.style.backgroundColor = '#4a4a4a';
+          pyramidsBtn.style.backgroundColor = '#4a4a4a';
+          break;
+          case 'coasters':
+          coasters.style.display = 'block';
+          pendants.style.display = 'none';
+          pyramids.style.display = 'none';
+          pendantsBtn.style.backgroundColor = '#4a4a4a';
+          coastersBtn.style.backgroundColor = '#178646';
+          pyramidsBtn.style.backgroundColor = '#4a4a4a';
+          break;
+          case 'pyramids':
+          pyramids.style.display = 'block';
+          pendants.style.display = 'none';
+          coasters.style.display = 'none';
+          pendantsBtn.style.backgroundColor = '#4a4a4a';
+          coastersBtn.style.backgroundColor = '#4a4a4a';
+          pyramidsBtn.style.backgroundColor = '#178646';
+          break;
+          default:
+          pendants.style.display = 'block';
+          coaster.style.display = 'none';
+          pyramids.style.display = 'none';
+          pendantsBtn.style.backgroundColor = '#178646';
+          coastersBtn.style.backgroundColor = '#4a4a4a';
+          pyramidsBtn.style.backgroundColor = '#4a4a4a';
+
+        }
+      }
+
+      selectCategory('pendants');
+
+    </script>
+
+
+
+   </body>
+ </html>
